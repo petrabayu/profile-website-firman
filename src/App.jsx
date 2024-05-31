@@ -5,6 +5,7 @@ import Infographics from "./components/Infographics";
 import Profile from "./components/Profile";
 import Maps from "./components/Maps";
 import Footer from "./components/Footer";
+import ChatWidget from "./components/ChatWidget";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Profile />
       <Maps />
       <Footer />
+      <ChatWidget />
     </>
   );
 }

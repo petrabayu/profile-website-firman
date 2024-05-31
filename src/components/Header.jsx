@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="bg-[#20313C] text-white px-6 py-4 flex justify-between items-center">
+      <div className="top-0 bg-[#20313C] text-white px-6 py-4 flex justify-between items-center">
         <div className="font-montserrat text-2xl">FIRMAN</div>
         <div className="md:hidden" onClick={toggleButton}>
           {!isOpen ? (
@@ -45,7 +45,11 @@ const Header = () => {
       </div>
 
       {/* Mobile Version */}
-      <div className={isOpen ? "bg-[#20313C] text-xl md:hidden" : "hidden"}>
+      <div
+        className={
+          isOpen ? "absolute w-full bg-[#20313C] text-xl md:hidden" : "hidden"
+        }
+      >
         <ul>
           {navItems.map((navItem, index) => (
             <li
