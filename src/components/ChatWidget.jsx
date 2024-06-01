@@ -31,7 +31,7 @@ const ChatWidget = () => {
         ctaText: "Chat with me",
         borderRadius: "25",
         autoShow: false,
-        phoneNumber: 62895339423748,
+        phoneNumber: "62895339423748",
       },
     };
 
