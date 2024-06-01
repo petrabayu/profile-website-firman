@@ -21,15 +21,15 @@ const ServicesCard = ({ Icon, title, description }) => {
 const Services = () => {
   return (
     <>
-      <div className="p-6 h-full">
-        <div className="">
+      <div className="p-6 h-full md:flex flex-col items-center justify-center min-h-screen">
+        <div className="lg:w-[800px]">
           <h2 className="text-[40px] font-bold">Layanan</h2>
-          <p className="text-xl my-4 leading-tight">
+          <p className="text-xl my-4 leading-tight lg:w-[520px]">
             Pegadaian CPS Babakan Surabaya siap melayani Anda dengan berbagai
             macam layanan untuk masa depan Anda.
           </p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col md:flex-row w-full lg:w-[800px] flex-wrap justify-between">
           <ServicesCard
             Icon={AiFillGold}
             title="Cicil Emas Murni"

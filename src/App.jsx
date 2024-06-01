@@ -11,11 +11,13 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Services />
-      <Infographics />
-      <Profile />
-      <Maps />
+      <main>
+        <Hero />
+        <Services />
+        <Infographics />
+        <Profile />
+        <Maps />
+      </main>
       <Footer />
       <ChatWidget />
     </>

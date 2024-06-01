@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="bg-[#20313C] text-white px-6 py-4 text-center">
+      <footer className="bg-[#20313C] text-white px-6 py-4 text-center">
         <div className="flex flex-row justify-center items-center gap-4 p-4">
           <a href={whatsappLink} target="_blank">
             <FaWhatsapp size="2rem" />
@@ -31,7 +31,7 @@ const Footer = () => {
             Petra Bayu Pangestu
           </a>
         </p>
-      </div>
+      </footer>
     </>
   );
 };
