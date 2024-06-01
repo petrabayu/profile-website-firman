@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import ProfilePicture from "../assets/profile-square.jpeg";
 
 const Profile = () => {
-  const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
+  const phoneNumber = 62895339423748;
   const whatsappLink = `https://wa.me/${phoneNumber}`;
 
   return (

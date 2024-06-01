@@ -3,6 +3,9 @@ import { FaBars, FaWhatsapp } from "react-icons/fa";
 import { RiCloseLargeLine } from "react-icons/ri";
 
 const Header = () => {
+  const phoneNumber = 62895339423748;
+  const whatsappLink = `https://wa.me/${phoneNumber}`;
+
   const navItems = ["Layanan", "Profil", "Lokasi"];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +16,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="sticky top-0 bg-[#20313C]  text-white px-6 py-4 flex justify-between items-center z-50">
+      <nav className="sticky top-0 bg-[#20313C] text-white px-6 py-4 flex justify-between items-center z-50">
         <div className="font-montserrat text-2xl">FIRMAN</div>
         <div className="md:hidden" onClick={toggleButton}>
           {!isOpen ? (
@@ -35,10 +38,12 @@ const Header = () => {
               </li>
             ))}
             <li className="flex justify-end">
-              <button className="bg-[#79DCAE] hover:bg-[#49B7A8] hover:text-white text-black font-medium px-6 py-3 uppercase rounded-full flex">
-                <FaWhatsapp size="1.5em" className="mr-2" />
-                Contact me
-              </button>
+              <a href={whatsappLink} target="_blank">
+                <button className="bg-[#79DCAE] hover:bg-[#49B7A8] hover:text-white text-black font-medium px-6 py-3 uppercase rounded-full flex">
+                  <FaWhatsapp size="1.5em" className="mr-2" />
+                  Contact me
+                </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -61,10 +66,12 @@ const Header = () => {
               </li>
             ))}
             <li className="flex justify-end p-3 border-t-[1px]">
-              <button className=" bg-[#79DCAE] hover:bg-[#49B7A8] hover:text-white text-black font-medium px-6 py-3 uppercase rounded-full flex">
-                <FaWhatsapp size="1.5em" className="mr-2" />
-                Contact me
-              </button>
+              <a href={whatsappLink} target="_blank">
+                <button className=" bg-[#79DCAE] hover:bg-[#49B7A8] hover:text-white text-black font-medium px-6 py-3 uppercase rounded-full flex">
+                  <FaWhatsapp size="1.5em" className="mr-2" />
+                  Contact me
+                </button>
+              </a>
             </li>
           </ul>
         </div>

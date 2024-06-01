@@ -31,7 +31,7 @@ const ChatWidget = () => {
         ctaText: "Chat with me",
         borderRadius: "25",
         autoShow: false,
-        phoneNumber: import.meta.env.VITE_PHONE_NUMBER,
+        phoneNumber: 62895339423748,
       },
     };
 

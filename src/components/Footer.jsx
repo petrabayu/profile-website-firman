@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
+  const phoneNumber = 62895339423748;
   const whatsappLink = `https://wa.me/${phoneNumber}`;
 
   return (
